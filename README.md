@@ -1,4 +1,5 @@
 # docker-redis-workbench
+![redis](https://i.imgur.com/2o0KogZ.png =520x)
 
 Dockerized Redis Workbench.
 
