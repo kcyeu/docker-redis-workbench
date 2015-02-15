@@ -10,7 +10,7 @@ RUN apt-get -qq update && apt-get -qqy install \
 RUN mkdir -p /var/www/rw
 RUN git clone https://github.com/kcyeu/redis-workbench.git /var/www/rw
 ADD 100-redis-workbench.conf /etc/apache2/sites-available/100-redis-workbench.conf
-RUN echo "<?php phpinfo(); ?>" > /var/www/rw/phpinfo.php
+#RUN echo "<?php phpinfo(); ?>" > /var/www/rw/phpinfo.php
 
 RUN a2ensite 100-redis-workbench
 RUN a2dissite 000-default
